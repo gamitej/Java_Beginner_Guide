@@ -1,0 +1,78 @@
+Important Java Concepts:-
+
+(String) to (Int) :--
+
+int n = Interger.parseInt(i);
+
+(String) to (String[]) :--
+
+String s = "amisha tiwari"
+
+Note:--
+for finding length of String use s.length();
+and for any type of array like String[] use s.length;
+
+
+*****INPUT*****
+import java.util.*;
+      or 
+import java.util.Scanner;
+
+public class Filename {
+  public static void main(String[] args) {
+    // input code here
+    Scanner sc = new Scanner(System.in);
+    
+    int n = sc.nextInt();
+    String s = sc.next(); // "amisha"
+    String s = sc.nextLine(); //"amisha tiwari"
+    char c = sc.next().charAt(0);
+    float f = sc.nextFloat();
+    boolean b = sc.nextBoolean();
+    double d = sc.nextDouble();
+  }
+}
+
+
+**** String Problems *******
+(P-1)
+Whenever you are using sc.nextLine();
+use sc.nextLine(); before that
+
+like:--
+sc.nextLine();
+String s = sc.nextLine();
+
+(P-2)
+**for ASCII value and for getting each elemts from string one by one.***
+
+String str =  "Amisha";
+for(int i=0;i<str.lenth();i++){
+   //str.charAt(i) this will give u elements 'A','m','i',.. 
+   //and this value now going to be char not String
+   int n = str.charAt(i); // used for getting the ASCII value
+}
+
+
+*******ASCII value to char****
+int n = 65;
+char x = (char)n;
+System.out.println(x) // 'A'
+
+
+**** Code Snippet For printing in different ways..****
+public class Solution {
+
+    public static void main(String[] args) {
+        String s = "amisha tiwari";
+        String[] st = s.split(" ");
+        int sl = s.length();
+        int stl = st.length;
+        System.out.println("Length of String(s) and String(s):- "+sl+" "+s);
+        
+        System.out.println(" Length of String[] st and String[] values:- "+stl+" "+st[0]
+        +" "+st[1]);
+    }
+}
+
+

@@ -1,0 +1,113 @@
+*******Java Basic********
+
+public class Filename {
+  public static void main(String[] args) {
+    // write code here
+  }
+}
+
+**********PRINT***********
+//To print result inn the different line
+System.out.println("hello "+" amisha");
+
+//To print result in same line
+System.out.print("hello "+" amisha");
+
+**********DATA-TYPE********
+String s = "amisha";
+char c = 'c';
+int n = 10;
+long l = 1;
+boolean f = true or false;
+double d = 10.0;
+float d = 10.0;
+
+diff b/w float and double:--
+Java by default stores real numbers as double to ensure higher precision.
+Double takes more space but more precise during computation and float takes less space but less precise.
+
+************Maths********
+Math.sqrt(n);
+Math.min(n,m);
+Math.max(n,m);
+
+********Array**********
+
+****(int-type-array)******
+if defining the size of (int) array:--
+Default value in int case is 0.
+
+int[] ar = new int[n];
+        or
+int[] ar;
+ar= new int[n];
+ both are true..
+
+if assigning values to the array..
+int[] ar = {1,2,3};
+
+int[][] ar = new int[n][m];
+int[][] ar = { {1, 2, 3, 4}, {5,7} };
+
+if you want to find the length of an array(type can be any) use (ar.length) 
+
+********(String-type-array)********
+String[] s = new String[n];
+default value in String case is null. 
+
+String st = {"amisha","ch"};
+
+for(int i=0; i<n;i++){
+   System.out.println(s[i]);
+}
+
+       or  
+this is applicable only for String array 
+for(String i:st){
+  System.out.println(i);
+}
+       
+       
+Note:--
+String s = "amisha"; 
+the String length cannot be reduced means we only add in it 
+but cannot change its elemets.
+
+*********** Type Casting *********
+
+It means changing the data-type of an already defined value.
+
+(automatically) - converting a smaller type to a larger type size
+byte -> short -> char -> int -> long -> float -> double
+
+(manually) - converting a larger type to a smaller size type
+double -> float -> long -> int -> char -> short -> byte
+
+
+**** Automatic - Casting ****
+public class Main {
+  public static void main(String[] args) {
+    int myInt = 9;
+    double myDouble = myInt; // Automatic casting: int to double
+
+    System.out.println(myInt);      // Outputs 9
+    System.out.println(myDouble);   // Outputs 9.0
+  }
+}
+
+**** Manual-Casting ****
+public class Main {
+  public static void main(String[] args) {
+    double myDouble = 9.78;
+    int myInt = (int) myDouble; // Manual casting: double to int
+
+    System.out.println(myDouble);   // Outputs 9.78
+    System.out.println(myInt);      // Outputs 9
+  }
+}
+
+
+
+
+
+
